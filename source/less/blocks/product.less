@@ -1,0 +1,47 @@
+.product__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.product__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: @smaller + 2;
+  font-weight: @regular;
+  line-height: @smaller + 6;
+  text-align: left;
+  color: @header-text-color;
+  text-transform: uppercase;
+
+  width: 100%;
+  max-width: 102px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.product__text {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: @smaller - 2;
+  text-align: left;
+  line-height: @smaller + 2;
+}
+
+.product__button {
+  display: block;
+  min-height: 40px;
+  min-width: 280px;
+  max-width: 480px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  z-index: 2;
+  text-align: center;
+  padding: 10px 20px;
+  color: @white;
+  background-color: @green;
+  line-height: @smaller + 6;
+  box-sizing: border-box;
+  font-weight: @regular;
+}
