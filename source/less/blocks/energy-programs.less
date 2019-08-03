@@ -56,19 +56,28 @@
 .energy-programs__icon::after {
   position: absolute;
   content: "";
-  margin-right: 20px;
-  background: url("../img/icon-cat-slim.svg") no-repeat center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
 }
 
-.energy-programs__icon--slim {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  // background: url(../../img/icon-cat-slim.svg) no-repeat center;
-}
 
 .energy-programs__icon--slim::after {
   position: absolute;
   content: "";
-  //  background: url(../../img/icon-cat-slim.svg) no-repeat center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 97%;
+  top: 42.5%;
+  background: url("../img/icon-cat-slim.svg") no-repeat center;
+}
+
+.energy-programs__icon--pro::after {
+  width: 135%;
+  height: 95%;
+  top: 50%;
+  background: url(../img/icon-cat-pro.svg) no-repeat center;
 }
