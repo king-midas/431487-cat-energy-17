@@ -121,44 +121,51 @@
           <h2 class="live-case__title main-title">Живой пример</h2>
           <div class="live-case__wrapper">
             <div class="live-case__sub-wrapper">
+              <div class="live-case__text-wrapper">
               <p class="live-case__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
                 Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
                 спит по 16 часов в день.
               </p>
+            </div>
               <div class="live-case__stats">
-                <ul class="live-case__row">
-                  <li class="live-case__quantity live-case__cell">5 кг</li>
-                  <li class="live-case__quantity live-case__cell">60 дней</li>
+                <ul class="live-case__result-list">
+                  <li class="live-case__result-item">
+                   <p class="live-case__result-value">5 кг</p>
+                   <p class="live-case__result-category">Снижение <br> веса</p>
+                 </li>
+                 <li class="live-case__result-item">
+                   <p class="live-case__result-value">60 дней</p>
+                   <p class="live-case__result-category">затрачено времени</p>
+                 </li>
                 </ul>
-                <ul class="live-case__row">
-                  <li class="live-case__quantity-description live-case__cell">снижение веса</li>
-                  <li class="live-case__quantity-description live-case__cell">затрачено времени</li>
-                </ul>
-                <ul class="live-case__row">
-                  <li class="live-case__food-costs live-case__cell">Затраты на питание:</li>
-                  <li class="live-case__food-costs live-case__cell">15 000 руб.</li>
-                </ul>
+              </div>
+              <div class="live-case__stats-total">
+                <p class="live-case__food-cost-title">Затраты на питание:</p>
+                <p class="live-case__food-cost-value">15 000 руб.</p>
               </div>
             </div>
             <div class="live-case__slider">
               <h2 class="visually-hidden">Слайдер</h2>
-              <input class="visually-hidden" type="radio" id="button-1" name="toggle" checked>
-              <input class="visually-hidden" type="radio" id="button-2" name="toggle">
+              <input class="visually-hidden live-case__slider--before" type="radio" id="before" name="slide-toggle"checked>
+              <input class="visually-hidden live-case__slider--after" type="radio" id="after" name="slide-toggle">
               <div class="live-case__slider-internal">
                 <div class="live-case__slides">
-                  <div class="live-case__first-slide">
-                    <img class="live-case__slide-image" width="311" height="232"
+                  <div class="live-case__slide-image live-case__slide-image--before" >
+                    <img width="311" height="232"
                       src="img/before-mobile@1x.png" alt="Раньше кот Борис был толстым...">
                   </div>
-                  <div class="live-case__second-slide">
-                    <img class="live-case__slide-image" width="251" height="240" src="img/after-mobile@1x.png"
+                  <div class="live-case__slide-image live-case__slide-image--after" >
+                    <img width="251" height="240" src="img/after-mobile@1x.png"
                       alt="А теперь Борис  - худой!">
                   </div>
                 </div>
               </div>
               <div class="live-case__slider-controls">
-                <span class="live-case__left">Было</span><label for="button-1"></label>
-                <label for="button-2"></label><span class="live-case__right">Стало</span>
+                <label class="live-case__slider-button live-case__slider-button--before" for="before">Было</label>
+                <div class="live-case__switch">
+                  <div class="live-case__grip" ></div>
+                </div>
+                <label class="live-case__slider-button live-case__slider-button--after" for="after">Стало</label>
               </div>
             </div>
           </div>
@@ -171,7 +178,7 @@
             <p class="partnership__adress">ул. Большая<br> Конюшенная, д. 19/8<br><span>Санкт-Петербург</span></p>
           </div>
           <div class="map">
-            <img class="map__image" src="img/map.jpg" width="320" height="400"
+            <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400"
               alt="Карта ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
           </div>
         </section>
