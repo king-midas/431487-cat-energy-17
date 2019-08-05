@@ -8,8 +8,6 @@ var burgerPicBurger = document.querySelector(".main-nav__burger-icon--open");
 
 navMenu.classList.remove("js-main-nav__wrapper--opened");
 
-
-
 showButton.addEventListener("click", function(evt){
   evt.preventDefault();
   navMenu.classList.toggle("js-main-nav--open");
