@@ -1,0 +1,115 @@
+.additional-goods {
+  margin-bottom: 35px;
+}
+
+.additional-goods__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: @smaller + 8;
+  line-height: @smaller + 8;
+  text-align: left;
+  font-weight: @regular;
+  margin: 29px 0 33px;
+  background-image: linear-gradient(to bottom,transparent 0,transparent 13px,#68b738 13px,#68b738 16px,transparent 16px,transparent 100%);
+}
+
+.additional-goods__title  span {
+  padding: 0 20px;
+  background-color: @white;
+}
+
+.additional-goods__item:first-child {
+  border-top: 1px solid #cdcdcd;
+}
+
+.additional-goods__item {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.additional-goods__name {
+  font-family: "Oswald","Arial", sans-serif;
+  font-size: @smaller + 2;
+  line-height: @smaller + 2;
+  font-weight: @regular;
+  text-align: left;
+  color: @goods-name-color;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 15px;
+}
+
+.additional-goods__description {
+  display: flex;
+  margin: 0;
+  padding-bottom: 14px;
+  justify-content: space-between;
+  font-family: "Arial", sans-serif;
+  font-size: @smaller;
+  line-height: @smaller;
+  font-weight: @regular;
+  color: @text-color;
+  text-align: left;
+  text-transform: lowercase;
+
+}
+
+.additional-goods__list {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0;
+}
+
+.additional-goods__button {
+  background-color: @green;
+  margin: 0 auto;
+  margin-bottom: 17px;
+  min-width: 280px;
+  max-width: 480px;
+  padding: 10px  20px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  &:hover {
+    background-color: @deep-green;
+  }
+  &:active {
+    background-color: @deep-green;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.additional-goods__wrapper {
+  margin-bottom: 39px;
+}
+
+.additional-goods__gift {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  padding: 15px 0 30px;
+
+}
+
+.gift__title {
+  font-family: "Arial", sans-serif;
+  font-size: @smaller + 2;
+  font-weight: @regular;
+  line-height: @smaller + 6;
+  text-align: center;
+  color: @white;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.gift::before {
+  content: "";
+  margin: 50px 0;
+  display: block;
+  width: 240px;
+  height: 60px;
+  background: url("../img/icon-gift.svg") no-repeat center;
+}
