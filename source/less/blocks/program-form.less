@@ -95,6 +95,25 @@
   // }
 }
 
+// .form-section__input:invalid {
+//   border: 2px solid @error-color;
+// }
+
+.form-section__input--email:invalid:not(:placeholder-shown) {
+  border: 2px solid @error-color;
+}
+
+
+.form-section__input--tel:invalid:not(:placeholder-shown) {
+  border: 2px solid @error-color;
+}
+.form-section__input--email:invalid:not(:placeholder-shown) .form-pic {
+  fill: #ff8282;
+}
+
+
+
+
 .form-section__input:hover .mail-pic {
   fill: @green;
 }
