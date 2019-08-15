@@ -34,3 +34,33 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 49;
+    padding-bottom: 47px;
+    min-height: 150px;
+  }
+
+  .page-footer__social {
+    border: none;
+  }
+
+  .social__link--vkontakte svg {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__link--instagram svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__link--facebook svg {
+    width: 14px;
+    height: 28px;
+  }
+}

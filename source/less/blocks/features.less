@@ -21,6 +21,15 @@
   list-style: none;
 }
 
+.features__title {
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: @bigger;
+  font-weight: @regular;
+  line-height: @large;
+  color: @header-text-color;
+}
+
 .features__item::before {
   content: "";
   margin-right: 20px;
@@ -56,4 +65,81 @@
 .features__item--icon-clock::before {
   content: "";
   background-image: url("../img/advantage-clock@1x.png");
+}
+
+@media (min-width: @tablet-width) {
+  .features__wrapper {
+    margin-top: 0;
+    max-width: 768px;
+  }
+
+  .features__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .features__item:nth-of-type(2n-1) {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .features__item {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 37px auto 38px;
+    padding: 0 40px 60px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 250px;
+    z-index: 0;
+    counter-increment: feature__number;
+  }
+
+  .features__item::before {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+  }
+
+  .features__item::after {
+    content: counter(feature__number);
+    position: absolute;
+    top: 93px;
+    right: 45px;
+    font-size: 280px;
+    color: @light-gray;
+    z-index: -1;
+  }
+
+  .features__item:first-child::after {
+    right: 60px;
+  }
+
+  .features__description {
+    font-family: "Arial", sans-serif;
+    font-weight: @regular;
+    font-size: @smaller + 2;
+    line-height: @smaller + 10;
+  }
+
+  .features__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: @regular;
+    font-size: @large;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__title {
+    padding: 35px 0;
+  }
+  .features__list {
+    flex-wrap: nowrap;
+  }
+
+  .features__item {
+    margin: 35px 32px 0 0;
+  }
 }

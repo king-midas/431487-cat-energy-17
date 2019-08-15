@@ -1,12 +1,13 @@
 .partnership__adress {
   margin: 0;
   min-width: 120px;
+  text-align: right;
 }
 
 .partnership__wrapper {
   padding: 26px 20px 25px;
   display: flex;
-
+  justify-content: space-between;
 }
 
 .partnership__wrapper--grey {
@@ -22,3 +23,49 @@
   color: @header-text-color;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .partnership__title {
+    font-size: @smaller + 6;
+    line-height: @smaller + 11;
+    text-align: left;
+  }
+
+  .partnership__adress {
+    font-size: @smaller + 2;
+    line-height: @smaller + 6;
+    text-align: right;
+  }
+
+  .partnership__wrapper--white {
+    background-color: @white;
+  }
+
+  .partnership__wrapper {
+    padding-top: 60px;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 70px;
+  }
+
+  .partnership__city {
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .partnership {
+    position: relative;
+  }
+
+  .partnership__wrapper {
+    position: absolute;
+    top: 120px;
+    left: 110px;
+    z-index: 2;
+  }
+
+  .partnership__title {
+    margin-right: 90px;
+  }
+ }

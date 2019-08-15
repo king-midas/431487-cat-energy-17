@@ -10,10 +10,10 @@
 
 <body>
 
-  <div class="index-page-wrapper">
 
 
-    <header class="page-header">
+
+    <header class="page-header page-header__index container">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrapper">
           <a class="logo page-header__logo" href="#">
@@ -31,7 +31,7 @@
           <div class="main-nav__wrapper js-main-nav__wrapper--opened">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
-                <a class="site-list__link" href="index.html">Главная</a>
+                <a class="site-list__link site-list__link--active" href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="catalog.html">Каталог продукции</a>
@@ -43,6 +43,14 @@
           </div>
         </nav>
       </div>
+      <section class="promo">
+          <div class="promo__wrapper container">
+            <h2 class="promo__title">Функциональное <br> питание для котов</h2>
+            <p class="promo__tagline">Занялся собой? Займись котом!</p>
+            <img class="promo__main-image" src="img/index-can-mobile@1x.png" alt="Изображение товара" width="280" height="270">
+            <a class="button promo__button" href="form.html">Подобрать программу</a>
+          </div>
+        </section>
     </header>
 
     <main class="page-main">
@@ -50,17 +58,10 @@
         Функциональное питание для котов - интернет-магазин "Cat-Energy"
       </h1>
 
-      <section class="promo">
-        <div class="promo__wrapper container">
-          <h2 class="promo__title">Функциональное питание для котов</h2>
-          <p class="promo__tagline">Занялся собой? Займись котом!</p>
-          <img class="promo__main-image" src="img/index-can-mobile@1x.png" alt="Изображение товара" width="280" height="270">
-          <a class="button promo__button" href="form.html">Подобрать программу</a>
-        </div>
-      </section>
+
 
       <section class="energy-programs">
-        <div class="container energy-programs__wrapper">
+        <div class="energy-programs__wrapper">
           <h2 class="visually-hidden">Программы питания Cat-Energy</h2>
           <ul class="energy-programs__list">
             <li class="energy-programs__item">
@@ -116,9 +117,11 @@
       </section>
 
       <section class="live-case">
-        <h2 class="live-case__title main-title">Живой пример</h2>
-        <div class="live-case__wrapper">
-          <div class="live-case__sub-wrapper">
+
+        <div class="live-case__wrapper container">
+
+            <div class="live-case__results-wrapper">
+                <h2 class="live-case__title main-title">Живой пример</h2>
             <div class="live-case__text-wrapper">
               <p class="live-case__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
                 Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
@@ -126,22 +129,25 @@
               </p>
             </div>
             <div class="live-case__stats">
+
               <ul class="live-case__result-list">
                 <li class="live-case__result-item">
                   <p class="live-case__result-value">5 кг</p>
-                  <p class="live-case__result-category">Снижение <br> веса</p>
+                  <p class="live-case__result-category">Снижение веса</p>
                 </li>
                 <li class="live-case__result-item">
                   <p class="live-case__result-value">60 дней</p>
                   <p class="live-case__result-category">затрачено времени</p>
                 </li>
               </ul>
-            </div>
+
             <div class="live-case__stats-total">
               <p class="live-case__food-cost-title">Затраты на питание:</p>
               <p class="live-case__food-cost-value">15 000 руб.</p>
             </div>
+
           </div>
+        </div>
           <div class="live-case__slider">
             <h2 class="visually-hidden">Слайдер</h2>
             <input class="visually-hidden live-case__slider--before" id="before" name="slide-toggle" type="radio" checked>
@@ -164,24 +170,25 @@
               <label class="live-case__slider-button live-case__slider-button--after" for="after">Стало</label>
             </div>
           </div>
-        </div>
+
       </section>
 
-      <section class="partnership">
-        <h2 class="visually-hidden">Сотрудничество</h2>
-        <div class="partnership__wrapper">
-          <b class="partnership__title">Приглашаем<br> к сотрудничеству дилеров!</b>
-          <p class="partnership__adress">ул. Большая<br> Конюшенная, д. 19/8<br><span>Санкт-Петербург</span></p>
-        </div>
-        <div class="map container" id="map">
-          <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.64925643150195!2d30.323050081028786!3d59.938828671312024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1564908181109!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-          <img class="map__image" src="img/bg-map-mobile@1x.png" alt="Карта ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" width="320" height="400">
-        </div>
-      </section>
 
 
     </main>
     <footer class="page-footer">
+
+        <section class="partnership">
+            <h2 class="visually-hidden">Сотрудничество</h2>
+            <div class="partnership__wrapper partnership__wrapper--white">
+              <b class="partnership__title">Приглашаем<br> к&nbsp; сотрудничеству <br> дилеров!</b>
+              <p class="partnership__adress">ул. Большая<br> Конюшенная, д. 19/8<br><span class="partnership__city">Санкт-Петербург</span></p>
+            </div>
+            <div class="map container" id="map">
+              <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.64925643150195!2d30.323050081028786!3d59.938828671312024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1564908181109!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <img class="map__image" src="img/bg-map-mobile@1x.png" alt="Карта ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" width="320" height="400">
+            </div>
+          </section>
       <div class="container page-footer__wrapper">
         <div class="page-footer__logo-wrapper">
           <a class="page-footer__logo-link" href="#">
@@ -254,7 +261,7 @@ z"></path>
       </div>
     </footer>
 
-  </div>
+
 
   <script src="js/main.js" type="text/javascript"></script>
 

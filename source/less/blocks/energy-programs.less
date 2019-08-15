@@ -6,6 +6,7 @@
   color: @header-text-color;
   text-transform: uppercase;
   display: flex;
+  align-items: center;
 }
 
 .energy-programs__list {
@@ -115,4 +116,92 @@
   height: 95%;
   top: 50%;
   background: url(../img/icon-cat-pro.svg) no-repeat center;
+}
+
+
+@media (min-width: @tablet-width) {
+  .energy-programs__list {
+    padding-bottom: 30px;
+  }
+
+  .energy-programs__item {
+    padding: 55px 285px 40px 50px;
+    position: relative;
+  }
+
+
+  .energy-programs__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: @bigger;
+    font-weight: @regular;
+    text-align: left;
+    line-height: @bigger + 1;
+    color: @header-text-color;
+    padding: 22px 0;
+    white-space: nowrap;
+  }
+
+  .energy-programs__description {
+    font-family: "Arial", sans-serif;
+    font-size: @smaller + 2;
+    text-align: left;
+    line-height: @smaller + 10;
+    border: none;
+    padding-right: 150px;
+  }
+
+  .energy-programs__link {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: @regular;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .energy-programs__icon {
+    position: absolute;
+    right: 42px;
+    width: 200px;
+    height: 200px;
+    margin-right: 60px;
+    top: 60px;
+    right: 42px;
+  }
+
+  .energy-programs {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .energy-programs__wrapper {
+    display: flex;
+    padding: 0 71px;
+  }
+
+  .energy-programs {
+    padding-top: 40px;
+  }
+
+  .energy-programs__item {
+    padding: 25px 50px;
+    margin: 40px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 36%;
+  }
+
+  .energy-programs__icon {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-right: 60px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .energy-programs__description {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 0;
+  }
 }

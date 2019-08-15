@@ -14,4 +14,3 @@ showButton.addEventListener("click", function(evt){
   burgerPicClose.classList.toggle("js-main-nav__icon-show");
   burgerPicBurger.classList.toggle("js-main-nav__icon-hide");
 });
-
