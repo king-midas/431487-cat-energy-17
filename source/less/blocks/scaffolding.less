@@ -19,10 +19,10 @@ a {
 }
 
 .container {
-  padding: 0;
+  padding: 0 20px;
   margin: 0 auto;
-  width: 280px;
-};
+  min-width: 320px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -33,13 +33,18 @@ a {
   padding: 0;
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
-};
-
-
-.index-page-wrapper,
-.catalog-page-wrapper,
-.form-page-wrapper {
-  width: 320px;
 }
 
 
+@media (min-width: @tablet-width) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    padding: 0 111px;
+    max-width: 1300px;
+  }
+}

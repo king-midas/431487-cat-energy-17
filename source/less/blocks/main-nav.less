@@ -1,14 +1,23 @@
 .main-nav {
   border-top: 1px solid #e6e6e6;
-  position: relative
+  position: relative;
+}
+
+.main-nav__wrapper {
+  display: none;
+}
+
+.js-main-nav__wrapper--opened {
+  display: block;
 }
 
 
 .main-nav__toggle-menu--close {
   position: absolute;
-  top: -45px;
+  top: -41px;
   right: 0;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .main-nav__list {
@@ -17,5 +26,46 @@
   list-style: none;
 }
 
+.main-nav__toggle {
+  border: 0;
+}
+
+.main-nav__burger-icon--open {
+  border: 0;
+}
 
 
+.main-nav__burger-icon--closed {
+  display: none;
+}
+
+.js-main-nav--open {
+  display: block;
+}
+
+.js-main-nav__icon-show {
+  display: block;
+}
+
+.js-main-nav__icon-hide {
+  display: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    border: none;
+  }
+
+  .main-nav__wrapper {
+    display: block;
+  }
+
+  .main-nav__burger-icon--open {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+}

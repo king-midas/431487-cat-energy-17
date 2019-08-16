@@ -1,8 +1,14 @@
-
-
 .page-header__logo-image {
   margin-left: 20px;
   margin-right: 68px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__logo {
@@ -13,5 +19,55 @@
 
 .page-header__logo-wrapper {
   width: 280px;
-  // border-bottom: 1px solid black;
+}
+
+.index-page-wrapper,
+.catalog-page-wrapper,
+.form-page-wrapper {
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .index-page-wrapper,
+  .catalog-page-wrapper,
+  .form-page-wrapper {
+    width: auto;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    padding-top: 52px;
+  }
+
+  .page-header {
+    position: relative;
+  }
+
+  .page-header__index {
+    z-index: 0;
+  }
+
+  .page-header::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: calc(50% + 40px);
+    background-color: #63a73a;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    z-index: -1;
+  }
 }

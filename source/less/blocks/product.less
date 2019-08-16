@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   max-width: 480px;
   margin: 0 auto;
+  position: relative;
 }
 
 .product__title {
@@ -19,12 +20,19 @@
   max-width: 102px;
   padding-bottom: 10px;
   margin: 0;
+
+  &:hover {
+    color: @green;
+  }
+}
+
+.product__title p {
+  margin: 0;
 }
 
 .product__text {
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: @smaller - 2;
-  text-align: left;
   line-height: @smaller + 2;
 }
 
@@ -44,4 +52,22 @@
   line-height: @smaller + 6;
   box-sizing: border-box;
   font-weight: @regular;
+
+  &:hover {
+    background-color: @deep-green;
+  }
+
+  &:active {
+    background-color: @deep-green;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.product__field {
+  text-align: left;
+  padding-right: 53px;
+}
+
+.product__value {
+  text-align: right;
 }
