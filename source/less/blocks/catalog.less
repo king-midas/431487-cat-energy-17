@@ -21,3 +21,29 @@
 .catalog__item--more {
   border-bottom: 1px solid #ededed;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: @large;
+    text-align: left;
+    line-height: @large;
+    color: @header-text-color;
+    padding: 35px 0;
+  }
+
+  .catalog__item {
+    border-top: none;
+    margin: 110px 30px 30px;
+    padding: 40px 38px;
+    // width: 324px;
+    background-color: #f2f2f2;
+  }
+
+  .catalog__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

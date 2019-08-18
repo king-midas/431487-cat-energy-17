@@ -4,10 +4,11 @@
 
 .additional-goods__title {
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: @smaller + 8;
-  line-height: @smaller + 8;
+  font-size: @smaller + 10;
+  line-height: @smaller + 10;
   text-align: left;
   font-weight: @regular;
+  color: @header-text-color;
   margin: 29px 0 33px;
   background-image: linear-gradient(to bottom, transparent 0, transparent 13px, #68b738 13px, #68b738 16px, transparent 16px, transparent 100%);
 }
@@ -112,4 +113,11 @@
   width: 240px;
   height: 60px;
   background: url("../img/icon-gift.svg") no-repeat center;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-goods__title {
+    font-size: @bigger;
+    line-height: @bigger;
+  }
 }
