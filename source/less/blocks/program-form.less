@@ -44,3 +44,40 @@
 .program-form__note sup {
   vertical-align: top;
 }
+
+@media (min-width: @tablet-width) {
+  .program-form__title {
+    font-size: @large;
+    margin-top: 34px;
+    margin-bottom: 55px;
+  }
+
+  .program-form__tagline {
+    font-size: @smaller + 6;
+    line-height: @bigger - 6;
+    padding-left: 40px;
+    padding-bottom: 46px;
+  }
+
+  .program-form__submit {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 72px;
+  }
+
+  .program-form__submit-button {
+    font-size: @smaller + 6;
+    margin-left: 40px;
+    margin-right: 60px;
+    flex-basis: 283px;
+    padding: 16px;
+    flex-grow: 0;
+  }
+
+  .program-form__note {
+    font-size: @smaller + 2;
+    margin: 18px 0;
+    margin-left: 3px;
+  }
+}

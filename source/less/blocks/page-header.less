@@ -41,6 +41,24 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
+  .page-header__logo-image {
+    margin: 0;
+    width: 69%;
+    height: auto;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    display: block;
+  }
+
+  .page-header__logo-image img {
+    width: 174px;
+    height: 59px;
+  }
+
+  .page-header__logo {
+    padding: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -69,5 +87,8 @@
     background-size: cover;
     background-position: right center;
     z-index: -1;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }

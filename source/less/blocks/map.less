@@ -2,6 +2,17 @@
   position: relative;
   min-width: 320px;
   min-height: 390px;
+  background-image: url(../img/map-pin.png), url(../img/bg-map-mobile@1x.png);
+  background-repeat: no-repeat,no-repeat;
+  background-position: center 59%,center;
+  background-size: 55px, cover;
+  z-index: 1;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url(../../img/map-pin.png), url(../../img/bg-map-mobile@2x.png);
+    background-repeat: no-repeat,no-repeat;
+    background-position: center 59%,center;
+    background-size: 55px, cover;
+    }
 }
 
 .map__frame {
@@ -14,5 +25,42 @@
 }
 
 .map__image {
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fdf7ef;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    background-image: url(../img/map-pin.png), url(../img/bg-map-tablet@1x.png);
+    background-repeat: no-repeat,no-repeat;
+    background-position-x: 50%;
+    background-position-y: 54%;
+    background-size: 113px, cover;
+
+    @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+    background-image:url("../img/map-pin.png"), url("../img/bg-map-tablet@2x.png");
+    background-size: 113px, cover;
+  }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    background-image: url("../img/map-pin.png"), url("../img/bg-map-desktop@1x.png");
+    background-repeat: no-repeat,no-repeat;
+    background-position: calc(71.1% + (100vw - 100%)/2) 51%, center;
+    background-size: 113px, cover;
+
+    @media (min-width: 1300px) and (min-resolution: 144dpi), (min-width: 1300px) and (min-resolution: 1.5dppx) {
+      background-image: url("../img/map-pin.png"), url("../img/bg-map-desktop@2x.png");
+      background-repeat: no-repeat,no-repeat;
+      background-position: calc(71.1% + (100vw - 100%)/2) 51%, center;
+      background-size: 113px, cover;
+  }
+}
 }

@@ -93,6 +93,16 @@
   background-position: center;
   align-items: center;
   padding: 15px 0 30px;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    padding: 15px 0 30px;
+    background-size: cover;
+  }
 }
 
 .gift__title {
