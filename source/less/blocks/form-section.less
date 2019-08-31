@@ -329,7 +329,7 @@
   }
 
   .form-section__title--owner-contacts {
-    margin-bottom: 30px;
+    margin-bottom: 44px;
   }
 
   .form-section__field--name {
@@ -398,4 +398,100 @@
     margin-top: 0;
     margin-bottom: 31px;
   }
+}
+
+@media (min-width: @desktop-width) {
+  .form-section__wrapper {
+    display: flex;
+  }
+
+  .form-section__field--name,
+  .form-section__field--weight,
+  .form-section__field--age,
+  .form-section__field--email,
+  .form-section__field--tel {
+    padding-left: 0;
+  }
+
+  .form-section--cat-info {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 44%;
+  }
+
+  .form-section--choose-program {
+    margin-top: 22px;
+    margin-right: 0;
+    flex-basis: 37%;
+    padding-top: 11px;
+  }
+
+  .form-section__text--age {
+    min-width: 117px;
+  }
+
+  .form-section__title {
+    margin-top: 23px;
+  }
+
+  .form-section__title span {
+    margin-left: 70px;
+    padding: 0 40px;
+  }
+
+  .form-section__wrapper--contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-section__field--email {
+    flex-basis: 569px;
+    padding-left: 0;
+  }
+
+  .form-section__text--email {
+    margin-right: 19px;
+  }
+
+  .form-section__field--tel {
+    flex-basis: 572px;
+    padding-right: 0;
+    margin-top: 14px;
+  }
+
+  .form-section__title--comment {
+    margin-top: 27px;
+  }
+
+  .form-section__field--textarea {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .form-section__title--extra {
+    margin-top: 48px;
+  }
+
+  .form-section__list--check {
+    flex-wrap: nowrap;
+    padding-left: 0;
+  }
+
+  .form-section__text--checkbox::before,
+  .form-section__text--radio::before {
+    margin-right: 17px;
+  }
+
+  .form-section--extra {
+    margin-bottom: 29px;
+  }
+
+  .form-section__title--owner-contacts {
+    margin-bottom: 30px;
+  }
+
+
+
+
 }

@@ -11,6 +11,10 @@
   }
 }
 
+.page-header__wrapper {
+  border-bottom: 1px solid #e6e6e6;
+}
+
 .page-header__logo {
   display: block;
   padding-top: 10px;
@@ -70,11 +74,16 @@
     position: relative;
   }
 
+  .page-header__logo-image {
+    width: 72%;
+    padding-top: 2px;
+  }
+
   .page-header__index {
     z-index: 0;
   }
 
-  .page-header::before {
+  .page-header__index::before {
     position: absolute;
     content: "";
     top: 0;

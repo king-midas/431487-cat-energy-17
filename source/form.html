@@ -13,7 +13,7 @@
 
 
 
-  <header class="page-header page-header__index container">
+  <header class="page-header page-header__ container">
     <div class="page-header__wrapper">
       <div class="page-header__logo-wrapper">
         <a class="logo page-header__logo" href="#">
@@ -59,64 +59,67 @@
           <h2 class="program-form__title">Подбор программы</h2>
           <p class="program-form__tagline">Заполните анкету и мы подберем <br> программу питания для вашего кота</p>
         </section>
-        <fieldset class="form-section form-section--cat-info">
-          <h3 class="visually-hidden">Заполните поля данными о своем коте</h3>
-          <div class="form-section__field form-section__field--name">
-            <label class="form-section__item form-section__item--name">
-              <span class="form-section__text form-section__text--name">Имя:*</span>
-              <input class="form-section__input form-section__input--name" type="text" name="Имя" placeholder="Барсик"
-                maxlength="17" required>
-            </label>
-          </div>
-          <div class="form-section__field form-section__field--weight">
-            <label class="form-section__item form-section__item--weight">
-              <span class="form-section__text form-section__text--weight">Вес (кг):*</span>
-              <input class="form-section__input form-section__input--weight" type="number" name="Вес" placeholder="7"
-                min="1" maxlength="7" required>
-            </label>
-          </div>
-          <div class="form-section__field form-section__field--age">
-            <label class="form-section__item form-section__item--age">
-              <span class="form-section__text form-section__text--age">Возраст (лет): </span>
-              <input class="form-section__input form-section__input--age" type="number" name="Возраст" placeholder="7"
-                min="1" maxlength="5">
-            </label>
-          </div>
-        </fieldset>
-        <fieldset class="form-section form-section--choose-program">
-          <h3 class="visually-hidden">Выберите программу</h3>
-          <ul class="form-section__list">
-            <li class="form-section__list-item">
-              <label class="form-section__item">
-                <input class="visually-hidden form-section__radio" type="radio" name="Программа" value="Похудение"
-                  checked>
-                <span class="form-section__text form-section__text--radio">
-                  Похудение
-                </span>
-              </label>
-            </li>
 
-            <li class="form-section__list-item">
-              <label class="form-section__item">
-                <input class="visually-hidden form-section__radio" type="radio" name="Программа" value="Набор массы">
-                <span class="form-section__text form-section__text--radio">
-                  Набор массы
-                </span>
+       <div class="form-section__wrapper">
+          <fieldset class="form-section form-section--cat-info">
+            <h3 class="visually-hidden">Заполните поля данными о своем коте</h3>
+            <div class="form-section__field form-section__field--name">
+              <label class="form-section__item form-section__item--name">
+                <span class="form-section__text form-section__text--name">Имя:*</span>
+                <input class="form-section__input form-section__input--name" type="text" name="Имя" placeholder="Барсик"
+                  maxlength="17" required>
               </label>
-            </li>
-
-            <li class="form-section__list-item">
-              <label class="form-section__item">
-                <input class="visually-hidden form-section__radio" type="radio" name="Программа"
-                  value="Не знаю (нужен ваш совет)">
-                <span class="form-section__text form-section__text--radio">
-                  Не знаю (нужен ваш совет)
-                </span>
+            </div>
+            <div class="form-section__field form-section__field--weight">
+              <label class="form-section__item form-section__item--weight">
+                <span class="form-section__text form-section__text--weight">Вес (кг):*</span>
+                <input class="form-section__input form-section__input--weight" type="number" name="Вес" placeholder="7"
+                  min="1" maxlength="7" required>
               </label>
-            </li>
+            </div>
+            <div class="form-section__field form-section__field--age">
+              <label class="form-section__item form-section__item--age">
+                <span class="form-section__text form-section__text--age">Возраст (лет): </span>
+                <input class="form-section__input form-section__input--age" type="number" name="Возраст" placeholder="7"
+                  min="1" maxlength="5">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form-section form-section--choose-program">
+            <h3 class="visually-hidden">Выберите программу</h3>
+            <ul class="form-section__list">
+              <li class="form-section__list-item">
+                <label class="form-section__item">
+                  <input class="visually-hidden form-section__radio" type="radio" name="Программа" value="Похудение"
+                    checked>
+                  <span class="form-section__text form-section__text--radio">
+                    Похудение
+                  </span>
+                </label>
+              </li>
 
-          </ul>
-        </fieldset>
+              <li class="form-section__list-item">
+                <label class="form-section__item">
+                  <input class="visually-hidden form-section__radio" type="radio" name="Программа" value="Набор массы">
+                  <span class="form-section__text form-section__text--radio">
+                    Набор массы
+                  </span>
+                </label>
+              </li>
+
+              <li class="form-section__list-item">
+                <label class="form-section__item">
+                  <input class="visually-hidden form-section__radio" type="radio" name="Программа"
+                    value="Не знаю (нужен ваш совет)">
+                  <span class="form-section__text form-section__text--radio">
+                    Не знаю (нужен ваш совет)
+                  </span>
+                </label>
+              </li>
+
+            </ul>
+          </fieldset>
+       </div>
 
       </div>
 
@@ -126,7 +129,7 @@
             Контактные данные <br> (владельца кота)
           </span>
         </h3>
-        <div class="program-form__wrapper container">
+        <div class="form-section__wrapper--contacts container">
           <div class="form-section__field form-section__field--email">
             <label class="form-section__item form-section__item--email">
               <span class="form-section__text form-section__text--email"> E-mail:*</span>
@@ -236,11 +239,16 @@
       <p class="partnership__adress">ул. Большая<br> Конюшенная, д. 19/8<br><span class="partnership__adress--city">Санкт-Петербург</span></p>
     </div>
     <div id="map" class="map container">
-      <iframe class="map__frame"
+      <!-- <iframe class="map__frame"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.64925643150195!2d30.323050081028786!3d59.938828671312024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1564908181109!5m2!1sru!2sru"
-        width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-      <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400"
-        alt="Карта ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
+        width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+        <picture>
+                <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
+              <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" width="320" height="400">
+            </picture>
+      <!-- <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400"
+        alt="Карта ул. Большая Конюшенная, д. 19/8, Санкт-Петербург"> -->
     </div>
   </section>
 
