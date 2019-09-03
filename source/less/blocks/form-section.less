@@ -5,14 +5,10 @@
 }
 
 .form-section--cat-info {
-  padding: 10px 0;
+  padding: 9px 0;
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 100%;
-}
-
-.form-section__field {
-  margin: 14px 0;
 }
 
 .form-section__item {
@@ -46,20 +42,17 @@
   color: @goods-name-color;
   text-align: left;
   text-transform: uppercase;
-}
-
-.form-section__text--age {
-  min-width: 94px;
+  white-space: nowrap;
 }
 
 .form-section__input {
   display: inline-block;
-  padding: 13px;
+  padding-left: 17px;
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 70px;
-  height: 45px;
-  min-width: 177px;
+  // height: 45px;
+  // min-width: 177px;
   color: @text-color;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: @smaller + 2;
@@ -75,6 +68,70 @@
   &:active {
     border: 2px solid @text-color;
   }
+}
+
+.form-section__input--email {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+}
+
+.form-section__input--tel {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 15px;
+  padding-left: 15px;
+}
+
+.form-section__text--name {
+  margin-right: 15px;
+  margin-top: 16px;
+}
+
+.form-section__text--weight {
+  margin-right: 16px;
+  margin-top: 16px;
+}
+
+.form-section__text--age {
+  margin-top: 14px;
+  margin-right: 15px;
+}
+
+.form-section__input--name {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 14px;
+  margin-top: 16px;
+  flex-basis: 81%;
+}
+
+.form-section__input--weight {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  margin-top: 13px;
+  flex-basis: 72%;
+}
+
+.form-section__input--age {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  margin-top: 13px;
+  flex-basis: 59%;
+}
+
+.form-section__field--name {
+  margin-right: 19px;
+}
+
+.form-section__field--weight {
+  margin-right: 19px;
+}
+
+.form-section__field--age {
+  margin-right: 19px;
 }
 
 .form-section__input--tel:invalid:not(:placeholder-shown) {
@@ -118,6 +175,8 @@
 .form-section--choose-program {
   margin: 0 -20px;
   padding: 9px 20px;
+  margin-top: 14px;
+  padding-bottom: 22px;
   outline: 1px solid #cdcdcd;
   flex-grow: 1;
   flex-shrink: 0;
@@ -189,6 +248,23 @@
   background-color: @white;
 }
 
+.form-section__title--owner-contacts {
+  padding-right: 15px;
+}
+
+.form-section__title--comment {
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.form-section__title--comment span {
+  padding-right: 22px;
+}
+
+.form-section__text--tel {
+  margin-top: 15px;
+}
+
 .form-section__icon {
   display: block;
   position: absolute;
@@ -196,6 +272,15 @@
   right: 15px;
   width: 20px;
   transform: translateY(-50%);
+}
+
+.form-section__icon--email {
+  // right: 54px
+}
+
+.form-section__icon--tel {
+  top: 65%;
+  right: 13px;
 }
 
 .form-section__input-wrapper {
@@ -212,13 +297,20 @@
 
 .form-section__input--textarea {
   font-family: "Oswald", "Arial", sans-serif;
-  height: 150px;
+  height: 134px;
+  padding-left: 14px;
+  padding-top: 12px;
   resize: none;
   margin-bottom: 0;
 }
 
+.form-section__title--extra {
+  margin-top: 28px;
+  margin-bottom: 34px;
+}
+
 .form-section--extra {
-  margin-bottom: 23px;
+  margin-bottom: 34px;
 }
 
 @media (min-width: @tablet-width) {
@@ -229,13 +321,40 @@
   }
 
   .form-section__field {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    // margin-top: 16px;
+    // margin-bottom: 16px;
     padding-top: 0px;
     padding-bottom: 4px;
     padding-right: 40px;
     padding-left: 41px;
   }
+
+  .form-section__field--email {
+    margin-bottom: 0;
+    margin-top: 14px;
+    padding-left: 42px;
+    padding-right: 35px;
+    padding-bottom: 0;
+  }
+
+  .form-section__field--tel {
+    padding-left: 38px;
+    padding-right: 36px;
+    padding-bottom: 0;
+    margin-top: 19px;
+  }
+
+  .form-section__field--name {
+    margin-top: 19px;
+    padding-bottom: 3px;
+    padding-right: 37px;
+  }
+
+  .form-section__field--weight {
+    padding-bottom: 3px;
+    padding-right: 37px;
+  }
+
 
   .form-section__input {
     font-size: @smaller + 6;
@@ -243,6 +362,29 @@
     padding: 0;
     padding-left: 19px;
     height: 51px;
+  }
+
+  .form-section__input--tel {
+    padding-left: 18px;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+
+  .form-section__input--name {
+    padding-left: 17px;
+    margin-top: 0;
+  }
+
+  .form-section__input--age {
+    padding-left: 18px;
+  }
+
+  .form-section__input--weight {
+    padding-left: 18px;
+  }
+
+  .form-section__input--email {
+    padding-left: 21px;
   }
 
   .form-section__item {
@@ -295,26 +437,8 @@
     margin-bottom: 24px;
   }
 
-  .form-section__field--email {
-    margin-bottom: 0;
-    margin-top: 14px;
-    padding-left: 42px;
-    padding-right: 35px;
-    padding-bottom: 0;
-  }
   .form-section__icon--email {
     right: 19px;
-  }
-
-  .form-section__input--email {
-    padding-left: 21px;
-  }
-
-  .form-section__field--tel {
-    padding-left: 38px;
-    padding-right: 36px;
-    padding-bottom: 0;
-    margin-top: 19px;
   }
 
   .form-section__icon--tel {
@@ -322,46 +446,19 @@
     top: 28px;
   }
 
-  .form-section__input--tel {
-    padding-left: 18px;
-    padding-bottom: 0;
-    margin-top: 0;
-  }
-
   .form-section__title--owner-contacts {
     margin-bottom: 44px;
-  }
-
-  .form-section__field--name {
-    margin-top: 19px;
-    padding-bottom: 3px;
-    padding-right: 37px;
-  }
-
-  .form-section__input--name {
-    padding-left: 17px;
-  }
-
-  .form-section__field--weight {
-    padding-bottom: 3px;
-    padding-right: 37px;
+    padding-right: 15px;
+    padding-left: 19px;
   }
 
   .form-section__text--weight {
     margin-right: 20px;
   }
 
-  .form-section__input--weight {
-    padding-left: 18px;
-  }
-
   .form-section__field--age {
     padding-bottom: 3px;
     padding-right: 37px;
-  }
-
-  .form-section__input--age {
-    padding-left: 18px;
   }
 
   .form-section__title--comment {
@@ -426,9 +523,6 @@
     padding-top: 11px;
   }
 
-  .form-section__text--age {
-    min-width: 117px;
-  }
 
   .form-section__title {
     margin-top: 23px;
