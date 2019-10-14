@@ -11,9 +11,45 @@
 <body>
 
 
+    <header class="page-header">
+        <div class="page-header__wrapper">
+          <div class="page-header__logo-wrapper container">
+            <a class="logo page-header__logo" href="#">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Cat-Energy"
+                  width="191" height="39">
+              </picture>
+            </a>
+          </div>
+          <nav class="main-nav">
+            <button class="main-nav__toggle main-nav__toggle-menu--close js-main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть/Закрыть Меню</span>
+              <span class="main-nav__toggle-button">
+                <img class="main-nav__burger-icon main-nav__burger-icon--closed" src="img/icon-close.svg" width="19"
+                  height="19">
+                <img class="main-nav main-nav__burger-icon--open" src="img/icon-mobile-menu.svg" width="19" height="19">
+              </span>
+            </button>
+            <div class="main-nav__wrapper js-main-nav__wrapper--opened">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--main">
+                  <a class="site-list__link site-list__link--main" href="index.html">Главная</a>
+                </li>
+                <li class="site-list__item site-list__item--catalog">
+                  <a class="site-list__link site-list__link--catalog" href="catalog.html">Каталог продукции</a>
+                </li>
+                <li class="site-list__item site-list__item--program site-list__item--active">
+                  <a class="site-list__link site-list__link--program site-list__link--active" href="form.html">Подбор программы</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
 
 
-    <header class="page-header page-header__index container">
+    <!-- <header class="page-header page-header__index container">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrapper">
           <a class="logo page-header__logo" href="#">
@@ -46,7 +82,7 @@
             </ul>
           </div>
         </nav>
-      </div>
+      </div> -->
       <section class="promo">
           <div class="promo__wrapper container">
             <h2 class="promo__title">Функциональное <br> питание для котов</h2>
