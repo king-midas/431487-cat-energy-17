@@ -1,7 +1,5 @@
 .live-case {
   background-color: @light-gray;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .live-case__result-list {
@@ -18,7 +16,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 124px;
+  width: 122px;
   margin-bottom: 34px;
   padding-top: 13px;
   padding-bottom: 17px;
@@ -32,6 +30,7 @@
   font-weight: @regular;
   line-height: @smaller + 10;
   color: @header-text-color;
+  text-transform: uppercase;
 }
 
 .live-case__result-category {
@@ -45,12 +44,20 @@
   top: calc(100% - 8px);
   left: 50%;
   z-index: 1;
-  padding-right: 15px;
-  padding-left: 15px;
   text-align: center;
   text-transform: lowercase;
   background-color: #f2f2f2;
   transform: translate(-50%);
+}
+
+.live-case__result-category--weight-loss {
+  padding-right: 13px;
+  padding-left: 11px;
+}
+
+.live-case__result-category--time-spent {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 
@@ -67,6 +74,7 @@
 
 .live-case__text {
   margin: 0;
+  padding-right: 10px;
   font-family: "Arial", sans-serif;
   font-size: @smaller;
   font-weight: @regular;
@@ -75,8 +83,9 @@
 }
 
 .live-case__title {
-  padding-top: 33px;
-  padding-bottom: 33px;
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 23px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: @regular;
   font-size: @bigger;
@@ -86,12 +95,13 @@
 }
 
 .live-case__text-wrapper {
-  padding-bottom: 27px;
+  padding-bottom: 25px;
 }
 
 .live-case__food-cost-title {
   margin: 0;
   color: @header-text-color;
+  padding-right: 3px;
 }
 
 .live-case__food-cost-value {

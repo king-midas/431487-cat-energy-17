@@ -12,18 +12,21 @@
 .energy-programs__list {
   margin: 0;
   padding: 0;
-  padding-bottom: 20px;
   padding-top: 23px;
   padding-left: 20px;
   padding-right: 20px;
   list-style: none;
 }
 
+.energy-programs__list--pro {
+  padding-top: 20px;
+}
+
 .energy-programs__item {
   background-color: @light-gray;
-  padding-top: 47px;
+  padding-top: 22px;
   padding-right: 20px;
-  padding-left: 41px;
+  padding-left: 20px;
 }
 
 .energy-programs__description {
@@ -33,9 +36,22 @@
   font-weight: @regular;
   line-height: @smaller + 4;
   color: @text-color;
-  padding-top: 22px;
-  padding-right: 30px;
+  // padding-top: 21px;
+  // padding-right: 14px;
+  // padding-bottom: 21px;
   border-bottom: 1px solid #d9d9d9;
+}
+
+.energy-programs__description--slim {
+  padding-top: 21px;
+  padding-right: 14px;
+  padding-bottom: 21px;
+}
+
+.energy-programs__description--pro {
+  padding-top: 22px;
+  padding-right: 14px;
+  padding-bottom: 22px;
 }
 
 .energy-programs__link {
@@ -46,7 +62,10 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 22px;
+
+
 
   &:active {
     opacity: 0.3;
@@ -71,9 +90,9 @@
 
 .energy-programs__link::before {
   order: 1;
-  margin-left: 10px;
-  width: 19px;
-  height: 3px;
+  margin-left: 13px;
+  width: 18px;
+  height: 2px;
   background-color: #444444;
 }
 
@@ -85,11 +104,22 @@
 
 .energy-programs__icon {
   position: relative;
-  margin-right: 20px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: @green;
+}
+
+.energy-programs__icon--slim {
+  margin-right: 19px;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+.energy-programs__icon--pro {
+  margin-right: 19px;
+  margin-left: 2px;
+  margin-top: 2px;
 }
 
 .energy-programs__icon::after {
@@ -100,14 +130,16 @@
   transform: translate(-50%, -50%);
 }
 
+
+
 .energy-programs__icon--slim::after {
   position: absolute;
   content: "";
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 51%;
+  left: 53%;
+  transform: translate(-53%, -56%);
   width: 100%;
-  height: 97%;
+  height: 100%;
   background: url("../img/icon-cat-slim.svg") no-repeat center;
 }
 
